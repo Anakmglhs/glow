@@ -1,0 +1,322 @@
+/* RESET E GERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* --------------------- CABEÇALHO --------------------- */
+header {
+    height: 10vh;
+    background-color: #ffbfe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinza {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    font-weight: 600;
+    color: #b88fcf;
+    font-size: 30px;
+}
+
+.buscar {
+    width: 50%;
+    height: 35px;
+    border: 2px solid #C5BFBF;
+    border-radius: 25px;
+    padding: 0 15px;
+}
+
+.icones, .icones2 img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.icones2 {
+    display: flex;
+    align-items: center;
+}
+
+/* --------------------- MENU --------------------- */
+.preto {
+    background-color:  #b88fcf;;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.preto a {
+    text-decoration: none;
+    color: #FDF9F9;
+    width: 120px;
+    text-align: center;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.preto a:hover {
+    color: #E0C2D5;
+}
+
+/* --------------------- FORMULÁRIO --------------------- */
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 10px;
+    color: #440E73;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #E0C2D5;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #c18fc2;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #E0C2D5;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #c18fc2;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #E0C2D5;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------- PRODUTOS / BUSCA --------------------- */
+.container-busca,
+.container-produtos {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.container-busca h2,
+.container-produtos h2 {
+    color: #E0C2D5;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    color: #440E73;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.produto p {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background-color: #E0C2D5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #c18fc2;
+    transform: scale(1.05);
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --------------------- RODAPÉ --------------------- */
+.rodape {
+    background-color: #E0C2D5;
+    color: #fff;
+    padding: 50px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.rodape-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.rodape-secao {
+    flex: 1 1 250px;
+    margin: 20px;
+}
+
+.rodape-secao h3 {
+    margin-bottom: 15px;
+    color: #dfb0cd;
+}
+
+.rodape-secao p, .rodape-secao ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rodape-secao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-secao ul li {
+    margin-bottom: 10px;
+}
+
+.rodape-secao ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape-secao ul li a:hover {
+    text-decoration: underline;
+}
+
+.redes a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.rodape-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #E0C2D5;
+}
+
+/* --------------------- RESPONSIVIDADE --------------------- */
+@media (max-width: 768px) {
+    .cinza {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buscar {
+        width: 80%;
+    }
+
+    .preto {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .grid-produtos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape-secao {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .buscar {
+        width: 100%;
+    }
+}
