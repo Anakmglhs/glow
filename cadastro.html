@@ -7,42 +7,91 @@
     <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-    <div id="pag1">
-        <header>
-            <div class="cinza">
-                <p class="texto">Glowphere</p>
-                <input type="text" class="buscar">
-                <img src="img/0e3ea1f4af7bdc0353252fa8af7de9366406fd82.png" class="icones" alt="">
-                <div class="icones2">
-                    <a href="cadastro.html"><img src="img/a77954abbdc5359c3b398aaed29b9aa4ca9d3b49.png" class="icones" alt=""></a>
-                    <a href="carrinho.html"><img src="img/4a276d71eb6d91b1e5c0beeb9e171d95285722f2.png" class="icones" alt=""></a>
-                </div>
+     <!-- CABEÇALHO -->
+    <header>
+        <div class="cinza">
+            <p class="texto">Glowphere</p>
+            <input type="text" class="buscar" placeholder="Buscar produtos...">
+            <div class="icones2">
+                <a href="cadastro.html"><img src="a77954abbdc5359c3b398aaed29b9aa4ca9d3b49.png" class="icones" alt="Cadastro"></a>
+                <a href="carrinho.html"><img src="4a276d71eb6d91b1e5c0beeb9e171d95285722f2.png" class="icones" alt="Carrinho"></a>
             </div>
+        </div>
+    </header>
 
-        </header>
+    <!-- MENU -->
+    <div class="preto">
+        <a href="index.html" class="txt2">Home</a>
+        <a href="produtos.html" class="txt2">Produtos</a>
+        <a href="quemsomos.html" class="txt2">Quem somos</a>
+        <a href="contato.html" class="txt2">Contato</a>
+        <a href="cadastro.html" class="txt2">Cadastro</a>
+    </div>
 
-        <div class="preto">
-            <a href="quemsomos.html" class="txt2">Quem somos</a>
-            <a href="produtos.html" class="txt2">Produtos</a>
-            <a href="contato.html" class="txt2">Contato</a>
-            <a href="index.html" class="txt2">Home</a>
+    <!-- FORMULÁRIO DE CADASTRO -->
+    <div class="form-container">
+        <h2>Cadastre-se</h2>
+        <p>Compre mais rápido e acompanhe seus pedidos em um só lugar!</p>
+        <form>
+            <div class="input-group">
+                <img src="User.png" alt="Nome" class="input-icon">
+                <input type="text" placeholder="Nome completo" required>
+            </div>
+            <div class="input-group">
+                <img src="Email.png" alt="E-mail" class="input-icon">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-group">
+                <img src="Phone.png" alt="Telefone" class="input-icon">
+                <input type="tel" placeholder="Telefone (opcional)">
+            </div>
+            <div class="input-group">
+                <img src="Lock.png" alt="Senha" class="input-icon">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <div class="input-group">
+                <img src="Lock.png" alt="Confirmar senha" class="input-icon">
+                <input type="password" placeholder="Confirmar senha" required>
+            </div>
+            <button type="submit">Criar uma conta</button>
+        </form>
+        <div class="login-link">
+            Já possui uma conta? <a href="#">Faça login</a>
         </div>
     </div>
-    <div class="form-container">
-    <h2>Cadastre-se</h2>
-    <p>Compre mais r�pido e acompanhe seus pedidos em um s� lugar!</p>
-    <form>
-        <input type="text" placeholder="Nome completo">
-        <input type="email" placeholder="E-mail">
-        <input type="tel" placeholder="Telefone (opcional)">
-        <input type="password" placeholder="Senha">
-        <input type="password" placeholder="Confirmar senha">
-        <!-- Aqui voc� pode adicionar o reCAPTCHA -->
-        <button type="submit">Criar uma conta</button>
-    </form>
-    <div class="login-link">
-        J� possui uma conta? <a href="#">Fa�a login</a>
-    </div>
-</div>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-secao">
+                <h3>Quem somos</h3>
+                <p>A Glowphere é para divas que querem arrasar com looks de alta qualidade e estilo. 
+                Oferecemos tendências para você se sentir a mais estilosa em qualquer rolê, festival ou date. 
+                Nossa missão é proporcionar a melhor experiência, com uma entrega rápida para que você brilhe sem demora.</p>
+            </div>
+            <div class="rodape-secao">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="rodape-secao">
+                <h3>Siga-nos</h3>
+                <div class="redes">
+                    <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="rodape-copy">
+            <p>&copy; 2025 Glowphere. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
